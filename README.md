@@ -21,14 +21,14 @@
 
 #### Docker Commands
 1. cd /SimpleTimeService
-2. docker build -D -t a7ryan/simpleTimeService:v1 .
-3. docker push a7ryan/simpleTimeService:v1
-4. docker run --name=simpleTimeService -d -p 8080:8080 a7ryan/simpleTimeService:v1
+2. docker build -D -t a7ryan/simple-time-service:v1 .
+3. docker push a7ryan/simple-time-service:v1
+4. docker run --name=simpleTimeService -d -p 8080:8080 a7ryan/simple-time-service:v1
 5. (Testing URL): http://localhost:8080
 
 ---
 
 #### DockerHub
-1. Image Repo: a7ryan/simpleTimeService
-2. Clone Image: docker pull a7ryan/simpleTimeService:v1
-3. Run Container: docker run --name=simpleTimeService -d -p 8080:8080 a7ryan/simpleTimeService:v1
+1. Image Repo: a7ryan/simple-time-service
+2. Clone Image: docker pull a7ryan/simple-time-service:v1
+3. Run Container: docker run --name=simpleTimeService -d -p 8080:8080 a7ryan/simple-time-service:v1
