@@ -1,0 +1,15 @@
+Golang Webserver:
+
+1. https://blog.kubesimplify.com/api-response-in-go
+2. https://pkg.go.dev/github.com/vikram1565/request-ip#section-readme
+
+---
+
+Rootless Docker:
+
+1. https://stackoverflow.com/questions/67261873/building-docker-image-as-non-root-user
+
+(Alpine: Syntax change)
+2. https://gist.github.com/BretFisher/04c5e682d8919126691fe122ae6742d7
+
+---
