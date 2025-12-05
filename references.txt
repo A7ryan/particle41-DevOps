@@ -2,6 +2,11 @@ Golang Webserver:
 
 1. https://blog.kubesimplify.com/api-response-in-go
 2. https://pkg.go.dev/github.com/vikram1565/request-ip#section-readme
+3. https://www.reddit.com/r/golang/comments/toynmv/rfc_get_the_real_client_ip_the_right_ways/
+4. https://github.com/zeromicro/go-zero/blob/master/rest/httpx/util.go
+
+*** Solved! [Just return first IP from this..]
+5. https://blog.petehouston.com/get-client-ip-address-in-go-web-application/
 
 ---
 
