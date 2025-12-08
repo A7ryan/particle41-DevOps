@@ -18,3 +18,12 @@ Rootless Docker:
 2. https://gist.github.com/BretFisher/04c5e682d8919126691fe122ae6742d7
 
 ---
+
+Terraform:
+
+1. https://developer.hashicorp.com/terraform/tutorials/kubernetes/eks
+
+2. https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_cluster
+
+3. **Solved!
+https://spacelift.io/blog/terraform-kubernetes-deployment
