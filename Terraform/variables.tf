@@ -10,7 +10,7 @@ variable "region" {
 variable "docker_image" {
   description = "docker image name"
   type = string
-  default = "a7ryan/simple-time-service:test_v1"
+  default = "a7ryan/simple-time-service:latest"
 }
 
 variable "cluster_name" {

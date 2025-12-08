@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # IMAGE_TAG: ${{ github.sha }}
-      IMAGE_TAG: test_v1
+      IMAGE_TAG: latest
 
     steps:
       - uses: actions/checkout@v3
