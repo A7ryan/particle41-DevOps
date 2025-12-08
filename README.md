@@ -14,6 +14,18 @@
 
 ---
 
+### Purpose of the Project
+
+- Build and containerize Golang webserver
+- Push image to DockerHub
+- Provision AWS infrastructure using Terraform: 
+- A VPC with public and private subnets
+- An EKS cluster deployed into private subnets
+- An AWS Load Balancer in public subnets
+- Deploy the application automatically to EKS using Terraform
+- <b>Main Aim:</b> anyone can run this using `terraform plan` and `terraform apply`.
+---
+
 # Clone the Repo
 
 ## <b>`git clone https://github.com/A7ryan/particle41-DevOps.git`</b>
@@ -83,7 +95,7 @@
 4. `terraform plan`
 5. `terraform apply`
 
-- It will take around 10 mins, Grab a coffee..
+- It will take around 10 mins..
 - Once process is finished you will get below output:
 
 ![Terraform Output](https://github.com/A7ryan/particle41-DevOps/blob/main/images/terraform-output.png)
@@ -102,12 +114,11 @@
 `aws configure`
 - Enter your account details (IAM Access Key)
 - Choose region: `us-east-1`
+- NOTE: I have used IAM User with `AdministratorAccess Policy` (and not Root user) for this demo.
+- Not best practice but for testing/dev the IAM with Admin access would work.
 
 ---
 
 #### Git Install
 - Run in terminal:
 `https://git-scm.com/install/`
-
-
-### Thanks for reading, have a great day...
