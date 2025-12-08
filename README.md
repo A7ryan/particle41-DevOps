@@ -23,15 +23,26 @@
 
 ---
 
-#### HTTP WebServer
+#### Golang - HTTP WebServer
+
+- Install Go - `https://go.dev/doc/install`
+
 1. Folder: /SimpleTimeService
 2. Language: Golang
 3. Build version: go1.23.4 windows/amd64
 4. lib/reference: references.txt
+5. Run/test code local pc: 
+- `cd ./SimpleTimeService`
+- `go mod init <your-github-username>/golang-webserver`
+- `go mod tidy`
+- `go run main.go`
 
 ---
 
 #### Dockerfile
+
+- Install Docker: `https://www.docker.com/get-started/`
+
 1. Folder: /SimpleTimeService/Dockerfile
 2. Build version (image): golang:1.25-alpine
 3. Approach: Used Multi-Stage Build
@@ -80,7 +91,7 @@
 - Paste the application_url into your browser to access the webservice.
 - <b>NOTE:</b> use http://<application_url>
 - Do not use https
-- It will show output as: `https://github.com/A7ryan/particle41-DevOps/blob/main/README.md#working-output`
+- It will show output as: ![Result](https://github.com/A7ryan/particle41-DevOps/blob/main/README.md#working-output)
 - Finally conclusion:  `terraform destroy`
 
 
