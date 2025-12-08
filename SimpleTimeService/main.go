@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strings"
 	"time"
 )
 
@@ -15,8 +16,8 @@ type SimpleTimeService struct {
 func getClientIpAddr(req *http.Request) string {
 	clientIp := req.Header.Get("X-Forwarded-For")
 	if clientIp != "" {
-		// firstIp := strings.Split(clientIp, ",")[0]
-		return clientIp
+		firstIp := strings.Split(clientIp, ",")[0]
+		return firstIp
 	}
 	return req.RemoteAddr
 }
