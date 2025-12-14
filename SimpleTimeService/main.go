@@ -56,5 +56,5 @@ func helperFunction(w http.ResponseWriter, r *http.Request) {
 
 func checkServerHealth(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("I am working fine.."))
+	w.Write([]byte("I am working fine..!"))
 }
