@@ -30,6 +30,8 @@ func main() {
 
 	http.HandleFunc("/", helperFunction)
 	http.HandleFunc("/health", checkServerHealth)
+	http.HandleFunc("/watchtower", alertWatchTower)
+	
 
 	err := server.ListenAndServe()
 	if err != nil {
@@ -56,5 +58,10 @@ func helperFunction(w http.ResponseWriter, r *http.Request) {
 
 func checkServerHealth(w http.ResponseWriter, r *http.Request) {
 	w.WriteHeader(http.StatusOK)
-	w.Write([]byte("I am working fine..!"))
+	w.Write([]byte("I am working fine.."))
+}
+
+func alertWatchTower(w http.ResponseWriter, r *http.Request) {
+	w.WriteHeader(http.StatusOK)
+	w.Write([]byte("Tell watchtower I have push latest code.."))
 }
